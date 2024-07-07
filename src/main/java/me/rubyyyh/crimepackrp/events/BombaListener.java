@@ -86,7 +86,6 @@ public class BombaListener implements Listener {
 
         for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
             if (onlinePlayer.hasPermission("bomb.alert")) {
-                // onlinePlayer.sendMessage(prefix + "E' stata piazzata una bomba a coord: " + loc.getX() + " " + loc.getY() + " " + loc.getZ() + " Da §c" + player.getName());
 
                 String messageTemplate = CrimePackRp.plugin.getConfig().getString("messages.bombPlaced");
                 if (messageTemplate != null) {

@@ -107,9 +107,7 @@ public class BombTickListener implements Listener {
                         timer.getAndDecrement();
                     }, 0L, 20L);
 
-                    //Create a bukkit runnable
                     Bukkit.getScheduler().runTaskLater(CrimePackRp.plugin, () -> {
-                        //Explode the bomb
                         float myFloatNumber = Float.parseFloat(CrimePackRp.plugin.getConfig().getString("debug.powerExplosion"));
                         if (!Data.bombs.containsKey(uniqueID)) {
                             return;
@@ -117,7 +115,6 @@ public class BombTickListener implements Listener {
                         block.setType(Material.AIR);
                         block.getWorld().createExplosion(loc, myFloatNumber, true, true);
 
-                        //remove the armor stand "§4Bomba
                         for (Entity entity : block.getWorld().getNearbyEntities(holoLoc, 1, 1, 1)) {
                             if (entity instanceof ArmorStand armorStand1 && "§4§lBOMBA".equals(armorStand1.getCustomName())) {
                                 armorStand1.remove();
@@ -126,10 +123,8 @@ public class BombTickListener implements Listener {
                         Data.bombs.remove(uniqueID);
                         CrimePackRp.plugin.getConfig().set("bombs." + uniqueID, null);
 
-                        //Remove the armor stand
                         timerStand.remove();
 
-                        //Send the message
                         String prefix1 = "[§4Bombs§f]§2 ";
                         for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                             if (onlinePlayer.hasPermission("bomb.alert")) {
@@ -178,7 +173,6 @@ public class BombTickListener implements Listener {
                             armorStand.remove();
 
                         }
-                        //Remove the armor stand with the timer
                         for (Entity entity1 : blockLoc.getWorld().getNearbyEntities(blockLoc.clone().add(0.5, 1.5, 0.5), 1, 1, 1)) {
                             if (entity1 instanceof ArmorStand armorStand1 && "§6§lSecondi rimanenti: ".equals(armorStand1.getCustomName())) {
                                 armorStand1.remove();
