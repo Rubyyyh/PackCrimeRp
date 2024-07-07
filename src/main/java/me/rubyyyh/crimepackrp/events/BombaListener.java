@@ -61,8 +61,6 @@ public class BombaListener implements Listener {
             return;
         }
 
-
-        //TODO: Fare in modo che si ccontrolli se il blocco è piazzato prima di continuare, per region
         Block blockPlaced = event.getBlockPlaced();
         Bukkit.getScheduler().runTaskLater(CrimePackRp.plugin, () -> {
             if (blockPlaced.getType() == Material.AIR) {
@@ -77,7 +75,7 @@ public class BombaListener implements Listener {
             }
         }, 1L);
 
-    // TODO: FINE
+
 
 
 
