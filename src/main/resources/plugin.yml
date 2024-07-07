@@ -1,0 +1,17 @@
+name: CrimePackRp
+version: '${project.version}'
+main: me.rubyyyh.crimepackrp.CrimePackRp
+api-version: '1.16'
+author: Rubyyyh
+description: Un plugin che aggiunge utilies per la CrimeRoleplay
+depend:
+  - SmartInvs
+commands:
+  crimepack:
+    description: Comando principale del plugin
+    permission: bomb.*
+  model-list:
+    description: Cerca i modelli dell'item che hai in mano
+
+
+

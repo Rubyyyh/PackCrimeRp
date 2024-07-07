@@ -1,0 +1,27 @@
+#Bombe SBU
+
+licenseKey: "fc9e92ae-d22c-4ae7-8df4-dd00842b9263"
+
+# Minecraft Color Codes:
+# §0 = Nero, §1 = Blu scuro, §2 = Verde scuro, §3 = Azzurro, §4 = Rosso, §5 = Viola, §6 = Oro, §7 = Grigio, §8 = Grigio scuro, §9 = Blu, §a = Verde, §b = Azzurro, §c = Rosso, §d = Rosa, §e = Giallo, §f = Bianco
+
+
+messages:
+ bombPlaced: "Bomba piazzata a coordinate: %x%, %y% %z%, da %player%" #Quando una bomba viene piazzata
+
+ bombExploded: "Bomba esplosa a coordinate: %x%, %y% %z%, da %player%" #Quando una bomba esplode
+ bombExplodedAll: "Tutte le bombe sono state detonate | da §c%player%" #Quando tutte le bombe sono esplose in contemporanea tramite la gui
+ pcPasswordSuccess: "§aPassword corretta!" #Quando la password inserita è corretta
+ pcPasswordFail: "§cPassword errata!" #Quando la password inserita è errata
+ pcPasswordDefault: "§cPassword di default! Cambiala subito!" #Quando la password non è stata impostata
+
+debug:
+ radiusDetonator: 30 #Raggio dove il detonatore può far esplodere le bombe Esempio: 10 = 10 blocchi (Accettati solo numeri intero)
+ powerExplosion: 10 #Potenza dell'esplosione delle bombe Esempio: 10 = 10 di potenza (Accettati solo numeri interi)
+ nickPC: "_soup4ik_" #Nick del player dalla quale si prende la testa per il pc, puoi scegliere quella che vuoi su siti come namemc.com
+
+#Non toccare le sezioni giù :)
+
+bombs: {}
+
+pc_piazzati: {}

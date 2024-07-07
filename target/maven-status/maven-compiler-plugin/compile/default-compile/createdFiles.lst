@@ -1,0 +1,12 @@
+me\rubyyyh\crimepackrp\Data.class
+me\rubyyyh\crimepackrp\inventory\BombaInventory.class
+me\rubyyyh\crimepackrp\commands\ModelCommand.class
+me\rubyyyh\crimepackrp\events\BombTickListener.class
+me\rubyyyh\crimepackrp\inventory\ModelInventory.class
+me\rubyyyh\crimepackrp\events\BombaListener.class
+me\rubyyyh\crimepackrp\inventory\ProximityBombInventory.class
+me\rubyyyh\crimepackrp\tasks\BombsTask.class
+me\rubyyyh\crimepackrp\events\DetonatorListener.class
+me\rubyyyh\crimepackrp\CrimePackRp.class
+me\rubyyyh\crimepackrp\commands\BombeCommand.class
+me\rubyyyh\crimepackrp\events\PcListener.class
